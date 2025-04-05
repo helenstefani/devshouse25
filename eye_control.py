@@ -75,10 +75,10 @@ while True:
             if abs(distance_change) > zoom_sensitivity and (current_time - last_zoom_time > zoom_cooldown):
                 if distance_change > 0:
                     pyautogui.hotkey('ctrl', '+')
-                    print("🔍 Zoom In")
+                    print("Zoom In")
                 else:
                     pyautogui.hotkey('ctrl', '-')
-                    print("🔍 Zoom Out")
+                    print("Zoom Out")
                 last_zoom_time = current_time
         prev_eye_distance = eye_distance
 
@@ -97,7 +97,7 @@ while True:
                     filepath = os.path.join(os.path.expanduser('~'), 'Pictures', filename)
                     try:
                         pyautogui.screenshot(filepath)
-                        print(f"📸 Screenshot saved: {filepath}")
+                        print(f"Screenshot saved: {filepath}")
                         screenshot_taken = True
                     except Exception as e:
                         print(f"[ERROR] Screenshot failed: {e}")
@@ -112,11 +112,11 @@ while True:
             if current_time - last_click_time > click_cooldown:
                 if is_left_closed and not is_right_closed:
                     pyautogui.click()
-                    print("🖱️ Left Click via Blink")
+                    print("Left Click via Blink")
                     last_click_time = current_time
                 elif is_right_closed and not is_left_closed:
                     pyautogui.click(button='right')
-                    print("👉 Right Click via Right Eye Wink")
+                    print("Right Click via Right Eye Wink")
                     last_click_time = current_time
 
         # Display eye status
