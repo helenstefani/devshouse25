@@ -32,11 +32,5 @@ The system will intelligently detect the user’s preferred mode of control base
 ---
 
 ## Tech Stack
-Python 3.8+
-OpenCV
-Mediapipe
-PyAutoGUI
-SpeechRecognition
-TensorFlow (planned for hand gesture detection)
-Flask + JavaScript (planned for web deployment)
+Python 3.8+, OpenCV, Mediapipe ,PyAutoGUI, SpeechRecognition, TensorFlow (planned for hand gesture detection) ,Flask + JavaScript (planned for web deployment)
 
